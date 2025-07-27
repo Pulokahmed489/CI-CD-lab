@@ -14,3 +14,7 @@ jobs:
         run: echo "Hello, CI/CD with GitHub Actions!"
       - name: Say Hello to Hassan
         run: echo "Hello, Hassan From GitHub Actions!"
+      - name: Show System Information
+        run: uname -a
+      - name: Show current date
+        run: date
