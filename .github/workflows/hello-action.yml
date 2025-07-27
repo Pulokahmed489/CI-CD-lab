@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Say Hello to Github
         run: echo "Hello, CI/CD with GitHub Actions!"
+      - name: Say Hello to Hassan
+        run: echo "Hello, Hassan From GitHub Actions!"
