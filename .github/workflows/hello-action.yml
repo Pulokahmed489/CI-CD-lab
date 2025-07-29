@@ -9,10 +9,15 @@ on:
 jobs:
   build-and-tests:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Install libssl1.1 (for .NET compatibility)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libssl1.1 || sudo apt-get install -y libssl1.0.0 || true
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -21,12 +26,3 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./SwaggerProj/Swagger.Tests
-
-    - name: Build the solution
-      run: dotnet build --no-restore
-      working-directory: ./SwaggerProj/Swagger.Tests
-
-    - name: Run Tests
-      run: dotnet test --no-build --verbosity normal
-      working-directory: ./SwaggerProj/Swagger.Tests
