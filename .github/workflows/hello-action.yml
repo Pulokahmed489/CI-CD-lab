@@ -18,3 +18,5 @@ jobs:
         run: uname -a
       - name: Show current date
         run: date
+      - name: List files in current directory
+        run: ls -la
