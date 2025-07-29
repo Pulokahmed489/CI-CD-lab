@@ -24,4 +24,3 @@ jobs:
         run: ls -la
       - name: Show current working directory
         run: pwd
-        working-directory: ./CI-CD-lab
