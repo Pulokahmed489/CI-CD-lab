@@ -20,8 +20,8 @@ namespace Swagger.Tests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("SwaggerInvntoryStep")]
-    public partial class SwaggerInvntoryStepFeature
+    [NUnit.Framework.DescriptionAttribute("SwaggerInventoryStep")]
+    public partial class SwaggerInventoryStepFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -35,7 +35,7 @@ namespace Swagger.Tests.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "SwaggerInvntoryStep", "\tAs a Dev Team\r\n\tI want to place an order to inventory\r\n\tAnd verify the item.", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "SwaggerInventoryStep", "  As a Dev Team,\r\n  I want to place an order to inventory\r\n  And verify the item", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,10 +74,10 @@ namespace Swagger.Tests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Vefiry inventory after placing an order")]
+        [NUnit.Framework.DescriptionAttribute("Verify inventory after placing an order")]
         [NUnit.Framework.CategoryAttribute("Positive")]
         [NUnit.Framework.TestCaseAttribute("create", "200", null)]
-        public void VefiryInventoryAfterPlacingAnOrder(string endpoint, string status, string[] exampleTags)
+        public void VerifyInventoryAfterPlacingAnOrder(string endpoint, string status, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "Positive"};
@@ -89,7 +89,7 @@ namespace Swagger.Tests.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("endpoint", endpoint);
             argumentsOfScenario.Add("status", status);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Vefiry inventory after placing an order", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify inventory after placing an order", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -101,162 +101,23 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 8
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given(string.Format("I have an API service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
- testRunner.When("I hit the api to place the order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I hit the API to place the order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
- testRunner.Then(string.Format("I should get a vlid response\'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then(string.Format("I should get a valid response \'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Vefiry item after getting an order after create")]
-        [NUnit.Framework.CategoryAttribute("Positive")]
-        [NUnit.Framework.TestCaseAttribute("create", "get", "200", null)]
-        public void VefiryItemAfterGettingAnOrderAfterCreate(string endpoint, string endpointtwo, string status, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "Positive"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("endpoint", endpoint);
-            argumentsOfScenario.Add("endpointtwo", endpointtwo);
-            argumentsOfScenario.Add("status", status);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Vefiry item after getting an order after create", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 17
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 18
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 19
- testRunner.When("I hit the api to place the order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 20
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpointtwo), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 21
- testRunner.When("I hit the api to get the order details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 22
- testRunner.Then(string.Format("I should get a vlid response\'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Vefiry item deleted after getting an order")]
-        [NUnit.Framework.CategoryAttribute("Positive")]
-        [NUnit.Framework.TestCaseAttribute("create", "get", "delete", "200", null)]
-        public void VefiryItemDeletedAfterGettingAnOrder(string endpoint, string endpointtwo, string endpointthree, string status, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "Positive"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("endpoint", endpoint);
-            argumentsOfScenario.Add("endpointtwo", endpointtwo);
-            argumentsOfScenario.Add("endpointthree", endpointthree);
-            argumentsOfScenario.Add("status", status);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Vefiry item deleted after getting an order", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 29
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 30
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 31
- testRunner.When("I hit the api to place the order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 32
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpointtwo), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 33
- testRunner.When("I hit the api to get the order details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 34
- testRunner.When(string.Format("I hit the delete Api\'{0}\'", endpointthree), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 35
- testRunner.Then(string.Format("I should get a vlid response\'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify User Info")]
-        [NUnit.Framework.CategoryAttribute("Positive")]
-        [NUnit.Framework.TestCaseAttribute("usercreate", "200", null)]
-        public void VerifyUserInfo(string endpoint, string status, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "Positive"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("endpoint", endpoint);
-            argumentsOfScenario.Add("status", status);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User Info", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 43
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 44
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 45
- testRunner.When("I hit the user api with user info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 46
- testRunner.Then(string.Format("I should get a vlid response\'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Vefiry Status of actual response of Current time with actual respone with previou" +
-            "s time")]
+        [NUnit.Framework.DescriptionAttribute("Verify status of response with time comparison")]
         [NUnit.Framework.CategoryAttribute("Positive")]
         [NUnit.Framework.TestCaseAttribute("findbystatus", "0", null)]
-        public void VefiryStatusOfActualResponseOfCurrentTimeWithActualResponeWithPreviousTime(string endpoint, string status, string[] exampleTags)
+        public void VerifyStatusOfResponseWithTimeComparison(string endpoint, string status, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "Positive"};
@@ -268,9 +129,8 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("endpoint", endpoint);
             argumentsOfScenario.Add("status", status);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Vefiry Status of actual response of Current time with actual respone with previou" +
-                    "s time", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 53
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify status of response with time comparison", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 55
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -280,27 +140,24 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 54
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 55
- testRunner.When("I perform a web request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 56
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given(string.Format("I have an API service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 57
- testRunner.When("I perform a second web request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I perform a web request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 58
- testRunner.Then(string.Format("I should get a valid response\'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.And("I perform a second web request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 59
+  testRunner.Then(string.Format("I should get a valid response \'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify User Info For FindByStatus")]
+        [NUnit.Framework.DescriptionAttribute("Verify User Info for FindByStatus")]
         [NUnit.Framework.CategoryAttribute("Positive")]
         [NUnit.Framework.TestCaseAttribute("findbystatus", "200", null)]
         public void VerifyUserInfoForFindByStatus(string endpoint, string status, string[] exampleTags)
@@ -315,7 +172,7 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("endpoint", endpoint);
             argumentsOfScenario.Add("status", status);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User Info For FindByStatus", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User Info for FindByStatus", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 66
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -327,13 +184,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 67
- testRunner.Given(string.Format("I have a Api Service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given(string.Format("I have an API service \'{0}\'", endpoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 68
- testRunner.When("I hit the user api with user info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I hit the user API with user info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 69
- testRunner.Then(string.Format("I should get a valid response\'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then(string.Format("I should get a valid response \'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

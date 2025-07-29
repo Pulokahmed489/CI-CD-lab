@@ -6,12 +6,7 @@
       "AbsoluteMoniker": "D:0:0:{4A81494E-9BEE-4D9E-8D4D-65C14481D2DE}|..\\Swagger.Api\\Swagger.Api.csproj|d:\\mamun\u0027s folder\\all projects\\swaggerproj\\swagger.api\\helpers\\webrequesthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B7F942E-2F75-4A83-8706-1CA5D206713E}|Swagger.Tests.csproj|d:\\mamun\u0027s folder\\all projects\\swaggerproj\\swagger.tests\\helpers\\assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B7F942E-2F75-4A83-8706-1CA5D206713E}|Swagger.Tests.csproj|solutionrelative:helpers\\assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B7F942E-2F75-4A83-8706-1CA5D206713E}|Swagger.Tests.csproj|d:\\mamun\u0027s folder\\all projects\\swaggerproj\\swagger.tests\\features\\swaggerinvntorystep.feature||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{0B7F942E-2F75-4A83-8706-1CA5D206713E}|Swagger.Tests.csproj|solutionrelative:features\\swaggerinvntorystep.feature||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{4A81494E-9BEE-4D9E-8D4D-65C14481D2DE}|..\\Swagger.Api\\Swagger.Api.csproj|d:\\mamun\u0027s folder\\all projects\\swaggerproj\\swagger.api\\models\\swaggerserviceapiobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,34 +26,23 @@
               "RelativeDocumentMoniker": "..\\Swagger.Api\\Helpers\\WebRequestHelper.cs",
               "ToolTip": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Api\\Helpers\\WebRequestHelper.cs",
               "RelativeToolTip": "..\\Swagger.Api\\Helpers\\WebRequestHelper.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAkwDAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAUwCMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T04:07:07.585Z",
+              "WhenOpened": "2025-07-29T16:13:10.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SwaggerInvntoryStep.feature",
-              "DocumentMoniker": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Tests\\Features\\SwaggerInvntoryStep.feature",
-              "RelativeDocumentMoniker": "Features\\SwaggerInvntoryStep.feature",
-              "ToolTip": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Tests\\Features\\SwaggerInvntoryStep.feature",
-              "RelativeToolTip": "Features\\SwaggerInvntoryStep.feature",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAswC0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-29T03:54:04.719Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Assertions.cs",
-              "DocumentMoniker": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Tests\\Helpers\\Assertions.cs",
-              "RelativeDocumentMoniker": "Helpers\\Assertions.cs",
-              "ToolTip": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Tests\\Helpers\\Assertions.cs",
-              "RelativeToolTip": "Helpers\\Assertions.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAUwCcAAAA2AAAAAAAAAA==",
+              "Title": "SwaggerServiceApiObjects.cs",
+              "DocumentMoniker": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Api\\Models\\SwaggerServiceApiObjects.cs",
+              "RelativeDocumentMoniker": "..\\Swagger.Api\\Models\\SwaggerServiceApiObjects.cs",
+              "ToolTip": "D:\\Mamun\u0027s Folder\\All Projects\\SwaggerProj\\Swagger.Api\\Models\\SwaggerServiceApiObjects.cs",
+              "RelativeToolTip": "..\\Swagger.Api\\Models\\SwaggerServiceApiObjects.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T03:38:14.649Z"
+              "WhenOpened": "2025-07-29T16:13:08.026Z",
+              "EditorCaption": ""
             }
           ]
         }
