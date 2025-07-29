@@ -1,0 +1,30 @@
+name: CI - Build and Test SwaggerProj
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    container:
+      image: mcr.microsoft.com/dotnet/sdk:5.0  # Uses .NET 7 SDK with correct libssl
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Restore dependencies
+      run: dotnet restore Swagger.Tests.sln
+
+    - name: Build the solution
+      run: dotnet build Swagger.Tests.sln --no-restore --configuration Release
+
+    - name: Run tests
+      run: dotnet test Swagger.Tests.sln --no-build --verbosity normal --configuration Release
