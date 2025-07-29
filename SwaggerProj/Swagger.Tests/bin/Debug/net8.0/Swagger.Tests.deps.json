@@ -10,7 +10,6 @@
         "dependencies": {
           "ExtentReports": "5.0.4",
           "FluentAssertions": "8.5.0",
-          "MSTest.TestAdapter": "3.9.3",
           "Microsoft.NET.Test.Sdk": "17.14.1",
           "NUnit3TestAdapter": "5.0.0",
           "Serilog": "4.3.0",
