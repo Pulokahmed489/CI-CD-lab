@@ -10,6 +10,8 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Say Hello to Github
         run: echo "Hello, CI/CD with GitHub Actions!"
       - name: Say Hello to Hassan
@@ -22,3 +24,4 @@ jobs:
         run: ls -la
       - name: Show current working directory
         run: pwd
+        working-directory: ./CI-CD-lab
