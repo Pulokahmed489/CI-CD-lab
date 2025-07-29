@@ -1,0 +1,44 @@
+C:\Users\14153\source\repos\Swagger.Api\bin\Debug\net5.0\Swagger.Api.deps.json
+C:\Users\14153\source\repos\Swagger.Api\bin\Debug\net5.0\Swagger.Api.dll
+C:\Users\14153\source\repos\Swagger.Api\bin\Debug\net5.0\Swagger.Api.pdb
+C:\Users\14153\source\repos\Swagger.Api\obj\Debug\net5.0\Swagger.Api.csprojAssemblyReference.cache
+C:\Users\14153\source\repos\Swagger.Api\obj\Debug\net5.0\Swagger.Api.AssemblyInfoInputs.cache
+C:\Users\14153\source\repos\Swagger.Api\obj\Debug\net5.0\Swagger.Api.AssemblyInfo.cs
+C:\Users\14153\source\repos\Swagger.Api\obj\Debug\net5.0\Swagger.Api.csproj.CoreCompileInputs.cache
+C:\Users\14153\source\repos\Swagger.Api\obj\Debug\net5.0\Swagger.Api.dll
+C:\Users\14153\source\repos\Swagger.Api\obj\Debug\net5.0\Swagger.Api.pdb
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Swagger.Api.deps.json
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Swagger.Api.dll
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Swagger.Api.pdb
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.csproj.AssemblyReference.cache
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.AssemblyInfoInputs.cache
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.AssemblyInfo.cs
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.csproj.CoreCompileInputs.cache
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.dll
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\refint\Swagger.Api.dll
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.pdb
+C:\Users\14153\source\repos\SwaggerProj\Swagger.Api\obj\Debug\net5.0\ref\Swagger.Api.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\NUnit3.TestAdapter.pdb
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\nunit.engine.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\nunit.engine.api.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\nunit.engine.core.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\testcentric.engine.metadata.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\NUnit3.TestAdapter.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Swagger.Api.deps.json
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Swagger.Api.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\bin\Debug\net5.0\Swagger.Api.pdb
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.csproj.AssemblyReference.cache
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.gentestingplatformentrypointinputcache.cache
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.genautoregisteredextensionsinputcache.cache
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.AssemblyInfoInputs.cache
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.AssemblyInfo.cs
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.csproj.CoreCompileInputs.cache
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\refint\Swagger.Api.dll
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\Swagger.Api.pdb
+D:\Mamun's Folder\All Projects\SwaggerProj\Swagger.Api\obj\Debug\net5.0\ref\Swagger.Api.dll
