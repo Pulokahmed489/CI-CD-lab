@@ -20,3 +20,5 @@ jobs:
         run: date
       - name: List files in current directory
         run: ls -la
+      - name: Show current working directory
+        run: pwd
