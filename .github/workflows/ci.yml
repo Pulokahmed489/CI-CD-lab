@@ -16,8 +16,8 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-    container:
-      image: mcr.microsoft.com/dotnet/sdk:8.0  # .NET SDK with correct dependencies
+    # container:
+    #   image: mcr.microsoft.com/dotnet/sdk:8.0  # .NET SDK with correct dependencies
 
     steps:
     - name: Checkout code
