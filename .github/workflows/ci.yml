@@ -19,7 +19,7 @@ jobs:
      - name: Hello World Environment Variable
        run: echo "Hello, world! ${{env.USERNAME}}"
      - name: Hello World user name 
-       run: echo "Hello, world! ${{inputs.username}}"
+       run: echo "Hello, world! ${{inputs.username.description}}"
 
 
 
