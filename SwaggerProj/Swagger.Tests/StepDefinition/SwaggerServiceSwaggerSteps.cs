@@ -4,11 +4,6 @@ using Serilog;
 using Swagger.Api.Helpers;
 using Swagger.Api.Models;
 using Swagger.Tests.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using static Swagger.Api.Models.SwaggerServiceApiObjects;
 
