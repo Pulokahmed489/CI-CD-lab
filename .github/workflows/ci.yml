@@ -1,37 +1,51 @@
-name: CI - Build and Test SwaggerProj
+name: HELLO WORLD
 
-on: 
+env:
+  USERNAME: lijon1990
+on:
   workflow_dispatch:
     inputs:
       username:
-        description: 'Run tests'
+        description: 'GitHub username'
         required: false
-        default: 'Test running'
-
+        default: 'lijon1990'
   push:
     branches:
       - main
-
 jobs:
-  build-and-test:
+  hello-world:
     runs-on: ubuntu-latest
-
-    container:
-      image: lijon1990/swaggerproj:latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+     - name: Hello World Environment Variable
+       run: echo "Hello, world! ${{env.USERNAME}}"
+     - name: Hello World user name 
+       run: echo "Hello, world! ${{inputs.username}}"
 
-    - name: Restore dependencies
-      run: dotnet restore Swagger.Tests.sln
-      working-directory: ./SwaggerProj/Swagger.Tests
 
-    - name: Build the solution
-      run: dotnet build Swagger.Tests.sln --no-restore --configuration Release
-      working-directory: ./SwaggerProj/Swagger.Tests
 
-    - name: Run tests
-      run: dotnet test Swagger.Tests.sln --no-build --verbosity normal --configuration Release
-      working-directory: ./SwaggerProj/Swagger.Tests
+
+
+
+
+  # build-and-test:
+  #   runs-on: ubuntu-latest
+
+  #   # container:
+  #   #   image: lijon1990/swaggerproj:latest
+
+  #   steps:
+  #   - name: Checkout code
+  #     uses: actions/checkout@v3
+
+  #   - name: Restore dependencies
+  #     run: dotnet restore Swagger.Tests.sln
+  #     working-directory: ./SwaggerProj/Swagger.Tests
+
+  #   - name: Build the solution
+  #     run: dotnet build Swagger.Tests.sln --no-restore --configuration Release
+  #     working-directory: ./SwaggerProj/Swagger.Tests
+
+  #   - name: Run tests
+  #     run: dotnet test Swagger.Tests.sln --no-build --verbosity normal --configuration Release
+  #     working-directory: ./SwaggerProj/Swagger.Tests
 
