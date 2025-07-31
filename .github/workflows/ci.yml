@@ -1,4 +1,27 @@
-name: HELLO WORLD
+# name: HELLO WORLD
+
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       username:
+#         description: 'GitHub username'
+#         required: false
+#         default: 'lijon1990'
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   hello-world:
+#     runs-on: ubuntu-latest
+#     env:
+#       USERNAME: lijon1990 
+#     steps:
+#      - name: Hello World Environment Variable
+#        run: echo "Hello, world! ${{env.USERNAME}}"
+#      - name: Hello World user name 
+#        run: echo Hello ${{ inputs.username }}
+
+name: Hello World With Input
 
 on:
   workflow_dispatch:
@@ -7,19 +30,14 @@ on:
         description: 'GitHub username'
         required: false
         default: 'lijon1990'
-  push:
-    branches:
-      - main
+
 jobs:
   hello-world:
     runs-on: ubuntu-latest
-    env:
-      USERNAME: lijon1990 
     steps:
-     - name: Hello World Environment Variable
-       run: echo "Hello, world! ${{env.USERNAME}}"
-     - name: Hello World user name 
-       run: echo Hello ${{ inputs.username }}
+      - name: Print GitHub Username Input
+        run: echo "Hello, ${{ inputs.username }}"
+
 
 
 
