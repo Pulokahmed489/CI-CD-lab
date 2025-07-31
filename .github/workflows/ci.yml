@@ -38,10 +38,8 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Set default username from input or fallback
-        run: echo "USERNAME=${{ github.event.inputs.username }}" >> $GITHUB_ENV
-
-
+      - name: Use USERNAME
+        run: echo "Hello, ${{ github.event.inputs.username }}"
       - name: Print the username
         run: echo "Hello, $USERNAME"
 
