@@ -21,27 +21,25 @@
 #      - name: Hello World user name 
 #        run: echo Hello ${{ inputs.username }}
 
-name: Hello World With Input
+name: 020-manual-input-workflow
 
 on:
   workflow_dispatch:
     inputs:
-      username:
-        description: 'GitHub username'
-        required: false
+      name:
+        description: 'person to greet'
         default: 'lijon1990'
+        required: true
   push:
     branches:
       - main
 
 jobs:
-  hello-world:
+  greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Set USERNAME environment variable
-        run: echo "USERNAME=${{ github.event.inputs.username.default }}" >> $GITHUB_ENV
-      - name: Print the username
-        run: echo "Hello, $USERNAME"
+      - name: Send greeting
+        run: echo "Hello ${{ github.event.inputs.name }}"
 
 
 
