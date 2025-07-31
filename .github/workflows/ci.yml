@@ -30,6 +30,9 @@ on:
         description: 'GitHub username'
         required: false
         default: 'lijon1990'
+  push:
+    branches:
+      - main
 
 jobs:
   hello-world:
