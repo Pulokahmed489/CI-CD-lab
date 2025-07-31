@@ -13,14 +13,13 @@ on:
 jobs:
   hello-world:
     runs-on: ubuntu-latest
+    env:
+      USERNAME: lijon1990 
     steps:
      - name: Hello World Environment Variable
        run: echo "Hello, world! ${{env.USERNAME}}"
      - name: Hello World user name 
        run: echo Hello ${{ inputs.username }}
-
-
-
 
 
 
