@@ -39,12 +39,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set default username from input or fallback
-        run: |
-          if [ -z "${{ github.event.inputs.username }}" ]; then
-            echo "USERNAME=lijon1990" >> $GITHUB_ENV
-          else
-            echo "USERNAME=${{ github.event.inputs.username }}" >> $GITHUB_ENV
-          fi
+        run: echo "USERNAME=${{ github.event.inputs.username }}" >> $GITHUB_ENV
+
 
       - name: Print the username
         run: echo "Hello, $USERNAME"
