@@ -28,7 +28,7 @@ on:
     inputs:
       name:
         description: 'person to greet'
-        default: 'lijon1990'
+        default: 'world'
         required: true
   push:
     branches:
