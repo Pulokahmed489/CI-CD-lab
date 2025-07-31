@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set USERNAME environment variable
-        run: echo "USERNAME=${{ github.event.inputs.username }}" >> $GITHUB_ENV
+        run: echo "USERNAME=${{ github.event.inputs.username.default }}" >> $GITHUB_ENV
       - name: Print the username
         run: echo "Hello, $USERNAME"
 
