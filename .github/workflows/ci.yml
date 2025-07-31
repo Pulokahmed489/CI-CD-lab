@@ -38,7 +38,7 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Use USERNAME
+      - name: Set USERNAME environment variable
         run: echo "USERNAME=${{ github.event.inputs.username }}" >> $GITHUB_ENV
       - name: Print the username
         run: echo "Hello, $USERNAME"
