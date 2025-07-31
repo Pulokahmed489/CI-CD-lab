@@ -84,7 +84,7 @@ jobs:
       working-directory: ./SwaggerProj/Swagger.Tests
 
     - name: Run tests
-      run: dotnet test Swagger.Tests.sln --no-build --verbosity detailed --configuration Release --logger "trx;LogFileName=test_results.trx" -reporttypes:Html
+      run: dotnet test Swagger.Tests.sln --no-build --verbosity detailed --configuration Release --logger "trx;LogFileName=test_results.trx" 
       working-directory: ./SwaggerProj/Swagger.Tests
 
     - name: Upload test results
