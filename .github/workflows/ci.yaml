@@ -43,3 +43,8 @@ jobs:
           echo "Repository: ${{ github.repository }}"
           echo "Ref: ${{ github.ref }}"
           echo "SHA: ${{ github.sha }}"
+          echo "Runner: ${{ runner.os }}"
+          echo "Arch: ${{ runner.arch }}"
+          echo "Name: ${{ runner.name }}"
+          echo "Temp: ${{ runner.temp }}"
+          echo "Tool_Cache: ${{ runner.tool_cache }}"
