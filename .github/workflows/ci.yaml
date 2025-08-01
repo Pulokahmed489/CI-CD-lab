@@ -1,4 +1,5 @@
 # Practice-4
+# Below example gets env var from github action and prints it in cicd workflow.
 name: Hello World
 
 env:
