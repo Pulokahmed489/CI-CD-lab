@@ -1,0 +1,25 @@
+# Practice-4
+# Below example gets env var from github action and prints it in cicd workflow.
+name: GitHub Context Example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  env-secrects-example:
+    env:
+      JOB_VAR: "job_level"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub actor
+        run: echo "Actor: ${{ github.actor }}"
+      - name: Print event name
+        run: echo "Event: ${{ github.event_name }}"
+      - name: Print repository
+        run: echo "Repository: ${{ github.repository }}"
+      - name: Print ref (branch or tag)
+        run: echo "Ref: ${{ github.ref }}"
+      - name: Print SHA
+        run: echo "SHA: ${{ github.sha }}"
