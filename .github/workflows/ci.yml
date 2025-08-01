@@ -34,7 +34,7 @@ jobs:
       - name: Access Githun repo secrets and var
         run: |
           echo "REPO_VAR: $REPO_VAR"
-          echo "REPO_SECRET: {}" ${{ secrets.REPO_SECRET }} 
+          echo "REPO_SECRET: {}" ${{ secrets.REPO_SECRECT }} 
 
 
 
