@@ -1,109 +1,41 @@
-# name: HELLO WORLD
+# Practice-4
+name: Hello World
 
-# on:
-#   workflow_dispatch:
-#     inputs:
-#       username:
-#         description: 'GitHub username'
-#         required: false
-#         default: 'lijon1990'
-#   push:
-#     branches:
-#       - main
-# jobs:
-#   hello-world:
-#     runs-on: ubuntu-latest
-#     env:
-#       USERNAME: lijon1990 
-#     steps:
-#      - name: Hello World Environment Variable
-#        run: echo "Hello, world! ${{env.USERNAME}}"
-#      - name: Hello World user name 
-#        run: echo Hello ${{ inputs.username }}
-
-name: 020-manual-input-workflow
+env:
+  GLOBAL_VAR: 'workflow_level'
+  REPO_VAR: ${{ vars.REPO_VAR }}
 
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'person to greet'
-        default: 'world'
-        required: true
+      username:
+        description: 'Name to greet'
+        required: false
+        default: World
+
   push:
     branches:
       - main
 
 jobs:
-  greet:
+  hello-world:
+    env:
+      JOB_VAR: 'job_level'
     runs-on: ubuntu-latest
     steps:
-      - name: Send greeting
-        run: echo "Hello ${{ github.event.inputs.name }}"
+      - name: Print environment variables
+        run: |
+          echo "GLOBAL_VAR: $GLOBAL_VAR"
+          echo "JOB_VAR: $JOB_VAR"
+          echo "STEP_VAR: $STEP_VAR"
+        env:
+          STEP_VAR: 'step_level'
 
+      - name: Access Githun repo secrets and var
+        run: |
+          echo "REPO_VAR: $REPO_VAR"
+          echo "REPO_SECRET: {}" ${{ secrets.REPO_SECRET }} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Below is a ci workable pipeline for donet app to restore, build run and test the application.
-  
-# name: CI - Build and Test SwaggerProj
-
-# on: 
-#   workflow_dispatch:
-#     inputs:
-#       username:
-#         description: 'Run tests'
-#         required: false
-#         default: 'Test running'
-
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   build-and-test:
-#     runs-on: ubuntu-latest
-
-#     container:
-#       image: lijon1990/swaggerproj:latest
-
-#     steps:
-#     - name: Checkout code
-#       uses: actions/checkout@v3
-
-#     - name: Restore dependencies
-#       run: dotnet restore Swagger.Tests.sln
-#       working-directory: ./SwaggerProj/Swagger.Tests
-
-#     - name: Build the solution
-#       run: dotnet build Swagger.Tests.sln --no-restore --configuration Release
-#       working-directory: ./SwaggerProj/Swagger.Tests
-
-#     - name: Run tests
-#       run: dotnet test Swagger.Tests.sln --no-build --verbosity detailed --configuration Release --logger "trx;LogFileName=test_results.trx" 
-#       working-directory: ./SwaggerProj/Swagger.Tests
-
-#     - name: Upload test results
-#       if: always()
-#       uses: actions/upload-artifact@v4
-#       with:
-#         name: test-results
-#         path: ./SwaggerProj/Swagger.Tests/TestResults
 
 
 
