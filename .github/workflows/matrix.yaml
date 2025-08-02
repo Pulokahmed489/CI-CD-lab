@@ -1,0 +1,29 @@
+name: Hello World
+
+env:
+  GLOBAL_VAR: "workflow_level"
+  REPO_VAR: ${{ vars.REPO_VAR }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Name to greet"
+        required: false
+        default: World
+
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  env-secrects-example:
+    env:
+      JOB_VAR: "job_level"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print environment variables
+        run: |
+          echo "GLOBAL_VAR: $GLOBAL_VAR"
+          echo "JOB_VAR: $JOB_VAR"
+          echo "STEP_VAR: $STEP_VAR"
