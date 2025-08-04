@@ -23,3 +23,7 @@ jobs:
           else
             echo "No previous commit to diff against (this might be the first commit)."
           fi
+      - name: Trigger next workflow
+        run: |
+          echo "Triggering Workflow 2..."
+          echo "Workflow 2 will run after this workflow completes."
