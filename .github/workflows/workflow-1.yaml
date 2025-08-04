@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main  # or your default branch  
-      - feature/workflow-file-changes-trigger  # or your default branch
+    #   - feature/workflow-file-changes-trigger  # or your default branch
 
 jobs:
   list_changed_files:
