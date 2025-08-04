@@ -1,0 +1,30 @@
+name: Workflow 1 - List Changed Files
+
+on:
+  push:
+    branches:
+      - main  # or your default branch  
+    #   - feature/workflow-file-changes-trigger  # or your default branch
+
+jobs:
+  list_changed_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: List files changed since last commit
+        run: |
+          echo "Changed files:"
+          if git rev-parse HEAD~1 >/dev/null 2>&1
+          then
+            git diff --name-only HEAD~1 HEAD
+          else
+            echo "No previous commit to diff against (this might be the first commit)."
+          fi
+      - name: Trigger next workflow
+        run: |
+          echo "Triggering Workflow 2..."
+          echo "Workflow 2 will run after this workflow completes."

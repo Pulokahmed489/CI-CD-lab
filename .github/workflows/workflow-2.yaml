@@ -1,0 +1,15 @@
+name: Workflow 2 - Triggered After Workflow 1
+
+on:
+  workflow_run:
+    workflows: ["Workflow 1 - List Changed Files"]
+    types:
+      - completed
+
+jobs:
+  second_job:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Workflow 1 completed. Running Workflow 2 now..."

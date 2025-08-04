@@ -3,7 +3,7 @@
 	I want a health end point via Swagger Services API
 	So that I can Verify the connectivity
 
-
+# Health Check
 @SmokeTests
 Scenario: Verify Swagger Services Health
 	Given I have a Swagger Services API '<endpoint>'
