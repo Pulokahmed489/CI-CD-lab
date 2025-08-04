@@ -14,10 +14,10 @@ on:
         required: false
         default: World
 
-  push:
-    branches:
-      - main
-      - feature/*
+  # push:
+  #   branches:
+  #     - main
+  #     - feature/*
 
 jobs:
   env-secrects-example:
