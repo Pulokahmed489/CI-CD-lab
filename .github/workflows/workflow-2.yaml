@@ -2,7 +2,7 @@ name: Workflow 2 - Triggered After Workflow 1
 
 on:
   workflow_run:
-    workflows: ["Workflow 1 - List Changed Files"]
+    workflows: ["Workflow-1 - List Changed Files"]
     types:
       - completed
 
