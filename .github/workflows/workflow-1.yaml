@@ -11,8 +11,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
 
       - name: List files changed since last commit
         run: |
           echo "Changed files:"
-          git diff --name-only HEAD~1 HEAD
+          if git rev-parse HEAD~1 >/dev/null 2>&1
+          then
+            git diff --name-only HEAD~1 HEAD
+          else
+            echo "No previous commit to diff against (this might be the first commit)."
+          fi
