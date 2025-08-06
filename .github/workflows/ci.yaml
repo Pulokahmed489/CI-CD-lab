@@ -1,54 +1,54 @@
-# Practice-4
-# Below example gets env var from github action and prints it in cicd workflow.
-name: Hello World
+# # Practice-4
+# # Below example gets env var from github action and prints it in cicd workflow.
+# name: Hello World
 
-env:
-  GLOBAL_VAR: "workflow_level"
-  REPO_VAR: ${{ vars.REPO_VAR }}
+# env:
+#   GLOBAL_VAR: "workflow_level"
+#   REPO_VAR: ${{ vars.REPO_VAR }}
 
-on:
-  workflow_dispatch:
-    inputs:
-      username:
-        description: "Name to greet"
-        required: false
-        default: World
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       username:
+#         description: "Name to greet"
+#         required: false
+#         default: World
 
-  # push:
-  #   branches:
-  #     - main
-  #     - feature/*
+#   # push:
+#   #   branches:
+#   #     - main
+#   #     - feature/*
 
-jobs:
-  env-secrects-example:
-    env:
-      JOB_VAR: "job_level"
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print environment variables
-        run: |
-          echo "GLOBAL_VAR: $GLOBAL_VAR"
-          echo "JOB_VAR: $JOB_VAR"
-          echo "STEP_VAR: $STEP_VAR"
-        env:
-          STEP_VAR: "step_level"
+# jobs:
+#   env-secrects-example:
+#     env:
+#       JOB_VAR: "job_level"
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Print environment variables
+#         run: |
+#           echo "GLOBAL_VAR: $GLOBAL_VAR"
+#           echo "JOB_VAR: $JOB_VAR"
+#           echo "STEP_VAR: $STEP_VAR"
+#         env:
+#           STEP_VAR: "step_level"
 
-      - name: Access Githun repo secrets and var
-        run: |
-          echo "REPO_VAR: $REPO_VAR"
-          echo "REPO_SECRET: {}" ${{ secrets.REPO_SECRET }}
-      - name: Get User Inputs
-        run: "echo Username: ${{ github.event.inputs.username.default }}"
+#       - name: Access Githun repo secrets and var
+#         run: |
+#           echo "REPO_VAR: $REPO_VAR"
+#           echo "REPO_SECRET: {}" ${{ secrets.REPO_SECRET }}
+#       - name: Get User Inputs
+#         run: "echo Username: ${{ github.event.inputs.username.default }}"
 
-      - name: Print GitHub actor
-        run: |
-          echo "Actor: ${{ github.actor }}"
-          echo "Event: ${{ github.event_name }}"
-          echo "Repository: ${{ github.repository }}"
-          echo "Ref: ${{ github.ref }}"
-          echo "SHA: ${{ github.sha }}"
-          echo "Runner: ${{ runner.os }}"
-          echo "Arch: ${{ runner.arch }}"
-          echo "Name: ${{ runner.name }}"
-          echo "Temp: ${{ runner.temp }}"
-          echo "Tool_Cache: ${{ runner.tool_cache }}"
+#       - name: Print GitHub actor
+#         run: |
+#           echo "Actor: ${{ github.actor }}"
+#           echo "Event: ${{ github.event_name }}"
+#           echo "Repository: ${{ github.repository }}"
+#           echo "Ref: ${{ github.ref }}"
+#           echo "SHA: ${{ github.sha }}"
+#           echo "Runner: ${{ runner.os }}"
+#           echo "Arch: ${{ runner.arch }}"
+#           echo "Name: ${{ runner.name }}"
+#           echo "Temp: ${{ runner.temp }}"
+#           echo "Tool_Cache: ${{ runner.tool_cache }}"
