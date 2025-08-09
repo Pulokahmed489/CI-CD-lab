@@ -13,3 +13,5 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Workflow 1 completed. Running Workflow 2 now..."
+      - name: Say Hello Hassan
+        run: echo "this is Hassan's workflow 2"
