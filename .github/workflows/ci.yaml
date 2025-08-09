@@ -40,7 +40,7 @@ jobs:
 
       - name: Get User Inputs
         run: |
-          echo "Username: ${{ github.event.inputs.username }}"
+          echo "Username: ${{ github.event.inputs.username.default }}"
 
       - name: Print GitHub actor
         run: |
